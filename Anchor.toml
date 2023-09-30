@@ -1,0 +1,18 @@
+[features]
+seeds = false
+skip-lint = false
+[programs.localnet]
+just_dex = "FaUPDdn2rBSXhQuKFioxtCeHGX4o7hvLdbNVX4Au26vn"
+
+[programs.devnet]
+just_dex = "FaUPDdn2rBSXhQuKFioxtCeHGX4o7hvLdbNVX4Au26vn"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "Localnet"
+wallet = "/home/agathokako/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
